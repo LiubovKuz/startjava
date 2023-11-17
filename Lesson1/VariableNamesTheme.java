@@ -23,7 +23,7 @@ public class VariableNamesTheme {
 
         //вес собаки
         int dogsWeight = 10;
-        System.out.println("вес собаки = " + dogWeight);
+        System.out.println("вес собаки = " + dogsWeight);
 
         //исходное число
         int startNum = 0;
@@ -35,7 +35,7 @@ public class VariableNamesTheme {
 
         //(переменная хранит символ) &
         char symbolAnd = '&';
-        System.out.println("(переменная хранит символ) & = " + symbol);
+        System.out.println("(переменная хранит символ) & = " + symbolAnd);
 
         //код ошибки
         int errorNum = 404;
@@ -47,7 +47,7 @@ public class VariableNamesTheme {
 
         //число нулей
         int zerosNum = 10;
-        System.out.println("число нулей = " + zeroNum);
+        System.out.println("число нулей = " + zerosNum);
 
         //уникальное число
         int uniqueNum = 777;
@@ -63,7 +63,7 @@ public class VariableNamesTheme {
 
         //выбор (чего-либо)
         String choice = "yes";
-        System.out.println("выбор (чего-либо) = " + choise);
+        System.out.println("выбор (чего-либо) = " + choice);
 
         //количество очков (в игре)
         int points = 15;
@@ -121,16 +121,16 @@ public class VariableNamesTheme {
         System.out.println("2.boolean-переменные");
 
         //сотни равны?
-        boolean ifHundredsEqual = true;
-        System.out.println("сотни равны? = " + ifHundredsEqual);
+        boolean isHundredsEqual = true;
+        System.out.println("сотни равны? = " + isHundredsEqual);
 
         //компьютер включен?
-        boolean ifComputerOn = true;
-        System.out.println("компьютер включен? = " + ifComputerOn);
+        boolean isComputerOn = true;
+        System.out.println("компьютер включен? = " + isComputerOn);
 
         //есть равные цифры?
-        boolean isEqualNumbers = false;
-        System.out.println("есть равные цифры? = " + isEqualNumbers);
+        boolean isEqualNum = false;
+        System.out.println("есть равные цифры? = " + isEqualNum);
 
         //(что-либо) создано?
         boolean isItCreated = true;
