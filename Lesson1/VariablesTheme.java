@@ -27,9 +27,7 @@ public class VariablesTheme {
         boolean isNotebookWork = true;
         System.out.println("Ноутбук в рабочем состоянии? = " + isNotebookWork);
 
-        System.out.println("");
-
-        System.out.println("2. Расчет стоимости товара со скидкой");
+        System.out.println("\n2. Расчет стоимости товара со скидкой");
 
         int costOfPen = 100;
         int costOfBook = 200;
@@ -39,17 +37,13 @@ public class VariablesTheme {
         System.out.println("общая стоимость товаров со скидкой = " 
         + ((costOfPen + costOfBook) - discount ));
 
-        System.out.println("");
-
-        System.out.println("3. Вывод слова JAVA");
+        System.out.println("\n3. Вывод слова JAVA");
         System.out.println("   J    a  v     v  a ");
         System.out.println("   J   a a  v   v  a a");
         System.out.println("J  J  aaaaa  V V  aaaaa");
         System.out.println(" JJ  a     a  V  a     a");
 
-        System.out.println("");
-
-        System.out.println("4. Вывод min и max значений целых числовых типов");
+        System.out.println("\n4. Вывод min и max значений целых числовых типов");
         byte minByte = -128;
         System.out.println("byte min значение = " + minByte);
         minByte++;
@@ -102,8 +96,7 @@ public class VariablesTheme {
         maxLong--;
         System.out.println("long max значение -1 = " + maxLong);
 
-        System.out.println("");
-        System.out.println("5. Перестановка значений переменных");
+        System.out.println("\n5. Перестановка значений переменных");
         int a = 2;
         int b = 5;
         System.out.println("Замена значений переменных с помощью третьей переменной");
@@ -126,9 +119,7 @@ public class VariablesTheme {
         b ^= a;
         System.out.println("Новые значения a = " + a + " b = "+ b);
 
-        System.out.println("");
-        System.out.println("6. Вывод символов и их кодов");
-
+        System.out.println("\n6. Вывод символов и их кодов");
         char code36 = '$';
         int as36 = code36;
         System.out.println(as36);
@@ -154,8 +145,7 @@ public class VariablesTheme {
         System.out.println(as126);
         System.out.println(code126);
 
-        System.out.println("");
-        System.out.println("7. Вывод в консоль ASCII-арт Дюка");
+        System.out.println("\n7. Вывод в консоль ASCII-арт Дюка");
         char d1 = '/';
         char d2 = '\\';
         char d3 = '_';
@@ -167,8 +157,7 @@ public class VariablesTheme {
         System.out.println("  " + d1 + "      " + d2 + "  ");
         System.out.println(" " + d1 + d3 + d3 + d3 + d1 + d2 + d3 + d3 + d3 + d2);
         
-        System.out.println("");
-        System.out.println("8. Вывод количества сотен, десятков и единиц числа");
+        System.out.println("\n8. Вывод количества сотен, десятков и единиц числа");
         int number = 123;
         int digit1 = (number / 1) % 10;
         int digit2 = (number / 10) % 10;
@@ -180,8 +169,7 @@ public class VariablesTheme {
         System.out.println("Сумма его цифр = " + digit1 + digit2 + digit3);
         System.out.println("Произведение = " + (digit1 * digit2 * digit3));
 
-        System.out.println("");
-        System.out.println("9. Вывод времени");
+        System.out.println("\n9. Вывод времени");
         int time = 86399;
         int sec = (time / 1) % 60;
         int min = (time / 60) % 60;
