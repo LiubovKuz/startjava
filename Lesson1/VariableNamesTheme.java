@@ -22,8 +22,8 @@ public class VariableNamesTheme {
         System.out.println("количество десятков = " + decimalsNum);
 
         //вес собаки
-        int dogsWeight = 10;
-        System.out.println("вес собаки = " + dogsWeight);
+        int dogWeight = 10;
+        System.out.println("вес собаки = " + dogWeight);
 
         //исходное число
         int startNum = 0;
@@ -34,8 +34,8 @@ public class VariableNamesTheme {
         System.out.println("процент по вкладу = " + depositInterest);
 
         //(переменная хранит символ) &
-        char symbolAnd = '&';
-        System.out.println("(переменная хранит символ) & = " + symbolAnd);
+        char ampersand = '&';
+        System.out.println("(переменная хранит символ) & = " + ampersand);
 
         //код ошибки
         int errorNum = 404;
@@ -90,8 +90,8 @@ public class VariableNamesTheme {
         System.out.println("окончание диапазона = " + endOfRange);
 
         //полное имя работника месяца
-        String bestWorkersFullName = "Ivanov Ivan";
-        System.out.println("окончание диапазона = " + bestWorkersFullName);
+        String bestWorkerFullName = "Ivanov Ivan";
+        System.out.println("окончание диапазона = " + bestWorkerFullName);
     
         //заголовок электронной книги
         String ebooksTitle = "Harry Potterr";
@@ -117,12 +117,11 @@ public class VariableNamesTheme {
         int numInEachLine = 5;
         System.out.println("количество чисел в каждой строке = " + numInEachLine);
 
-        System.out.println();
-        System.out.println("2.boolean-переменные");
+        System.out.println("\n2.boolean-переменные");
 
         //сотни равны?
-        boolean isHundredsEqual = true;
-        System.out.println("сотни равны? = " + isHundredsEqual);
+        boolean isEqualHundreds = true;
+        System.out.println("сотни равны? = " + isEqualHundreds);
 
         //компьютер включен?
         boolean isComputerOn = true;
@@ -133,51 +132,50 @@ public class VariableNamesTheme {
         System.out.println("есть равные цифры? = " + isEqualNum);
 
         //(что-либо) создано?
-        boolean isItCreated = true;
-        System.out.println("(что-либо) создано? = " + isItCreated);
+        boolean isCreated = true;
+        System.out.println("(что-либо) создано? = " + isCreated);
 
         //(что-либо) пусто?
-        boolean isItBlank = false;
-        System.out.println("(что-либо) пусто? = " + isItBlank);
+        boolean isEmpty = false;
+        System.out.println("(что-либо) пусто? = " + isEmpty);
 
         //(что-либо) активный?
-        boolean isItActive = true;
-        System.out.println("(что-либо) активный? = " + isItActive);
+        boolean isActive = true;
+        System.out.println("(что-либо) активный? = " + isActive);
 
         //новый?
-        boolean isItNew = false;
-        System.out.println("новый? = " + isItNew);
+        boolean isNew = false;
+        System.out.println("новый? = " + isNew);
 
         //электронная почта действительная?
         boolean isValidMail = true;
         System.out.println("электронная почта действительная? = " + isValidMail);
 
         //имеются уникальные строки?
-        boolean isThereUniqueLines = true;
-        System.out.println("имеются уникальные строки? = " + isThereUniqueLines);
+        boolean hasUniqueLines = true;
+        System.out.println("имеются уникальные строки? = " + hasUniqueLines);
 
-        System.out.println();
-        System.out.println("3.Аббревиатуры");
+        System.out.println("\n3.Аббревиатуры");
 
         //старый universally unique identifier
         String oldUuid ="RV156";
         System.out.println("старый universally unique identifier = " + oldUuid);
 
         //производитель оперативной памяти
-        String ram = "Samsung";
-        System.out.println("производитель оперативной памяти = " + ram);
+        String ramManufacture = "Samsung";
+        System.out.println("производитель оперативной памяти = " + ramManufacture);
 
         //емкость жесткого диска
-        String hDCapacity = "140GB";
-        System.out.println("емкость жесткого диска = " + hDCapacity);
+        String hddCapacity = "140GB";
+        System.out.println("емкость жесткого диска = " + hddCapacity);
 
         //протокол передачи гипертекста
         String http = "https";
         System.out.println("протокол передачи гипертекста = " + http);
 
         //сокращенный uniform resource locator
-        String url = "https://www.microsoft.com/";
-        System.out.println("сокращенный uniform resource locator = " + url);
+        String shortUrl = "https://www.microsoft.com/";
+        System.out.println("сокращенный uniform resource locator = " + shortUrl);
 
         //новый идентификатор клиента
         String newId = "RW123";
@@ -186,6 +184,5 @@ public class VariableNamesTheme {
         //кодировка american standard code for information interchange
         String ascii = "SOH";
         System.out.println("кодировка american standard code for information interchange = " + ascii);
-
     }
 }
