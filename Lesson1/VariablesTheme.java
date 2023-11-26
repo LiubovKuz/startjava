@@ -45,33 +45,33 @@ public class VariablesTheme {
         System.out.println(" JJ  a     a  V  a     a");
 
         System.out.println("\n4. Вывод min и max значений целых числовых типов");
-        byte byteVariable = 127;
-        System.out.println("byte значение " + byteVariable);
-        byteVariable++;
-        System.out.println("byte min = " + byteVariable);
-        byteVariable--;
-        System.out.println("byte max = " + byteVariable);
+        byte byteMax = 127;
+        System.out.println("byte значение " + byteMax);
+        byteMax++;
+        System.out.println("byte min = " + byteMax);
+        byteMax--;
+        System.out.println("byte max = " + byteMax);
 
-        short shortVariable = 32767;
-        System.out.println("short значение = " + shortVariable);
-        shortVariable++;
-        System.out.println("short min = " + shortVariable);
-        shortVariable--;
-        System.out.println("short max = " + shortVariable);
+        short shortMax = 32767;
+        System.out.println("short значение = " + shortMax);
+        shortMax++;
+        System.out.println("short min = " + shortMax);
+        shortMax--;
+        System.out.println("short max = " + shortMax);
 
-        int intVariable = 2147483647;
-        System.out.println("int значение = " + intVariable);
-        intVariable++;
-        System.out.println("int min значение = " + intVariable);
-        intVariable--;
-        System.out.println("int max значение = " + intVariable);
+        int intMax = 2147483647;
+        System.out.println("int значение = " + intMax);
+        intMax++;
+        System.out.println("int min значение = " + intMax);
+        intMax--;
+        System.out.println("int max значение = " + intMax);
 
-        long longVariable = 9223372036854775807L;
-        System.out.println("long значение = " + longVariable);
-        longVariable++;
-        System.out.println("long min значение = " + longVariable);
-        longVariable--;
-        System.out.println("long max значение = " + longVariable);
+        long longMax = 9223372036854775807L;
+        System.out.println("long значение = " + longMax);
+        longMax++;
+        System.out.println("long min значение = " + longMax);
+        longMax--;
+        System.out.println("long max значение = " + longMax);
 
         System.out.println("\n5. Перестановка значений переменных");
         int a = 2;
@@ -99,19 +99,19 @@ public class VariablesTheme {
 
         System.out.println("\n6. Вывод символов и их кодов");
         char dollar = '$';
-        System.out.println("ASCII value of " + dollar + " is " + (int)dollar);
+        System.out.println("ASCII value of " + dollar + " is " + (int) dollar);
 
         char asterisk = '*';
-        System.out.println("ASCII value of " + asterisk + " is " + (int)asterisk);
+        System.out.println("ASCII value of " + asterisk + " is " + (int) asterisk);
 
         char atSign = '@';
-        System.out.println("ASCII value of " + atSign + " is " + (int)atSign);
+        System.out.println("ASCII value of " + atSign + " is " + (int) atSign);
 
         char verticalBar = '|';
-        System.out.println("ASCII value of " + verticalBar + " is " + (int)verticalBar);
+        System.out.println("ASCII value of " + verticalBar + " is " + (int) verticalBar);
 
         char tilde = '~';
-        System.out.println("ASCII value of " + tilde + " is " + (int)tilde);
+        System.out.println("ASCII value of " + tilde + " is " + (int) tilde);
 
         System.out.println("\n7. Вывод в консоль ASCII-арт Дюка");
         char slash = '/';
@@ -122,28 +122,28 @@ public class VariablesTheme {
         System.out.println("     " + slash + backslash);
         System.out.println("    " + slash + "  " + backslash);
         System.out.println("   " + slash + underscore + leftParenthesis + " " 
-            + rightParenthesis + backslash);
+                + rightParenthesis + backslash);
         System.out.println("  " + slash + "      " + backslash);
         System.out.println(" " + slash + underscore + underscore + underscore + slash 
-            + backslash + underscore + underscore + underscore + backslash);
+                + backslash + underscore + underscore + underscore + backslash);
         
         System.out.println("\n8. Вывод количества сотен, десятков и единиц числа");
         int number = 123;
-        int units = number % 10;
+        int ones = number % 10;
         int decimals = (number / 10) % 10;
         int hundreds = number / 100;
         System.out.println("Число N содержит:");
         System.out.println("сотен - " + hundreds);
         System.out.println("десятков - " + decimals);
-        System.out.println("единиц - " + units);
-        System.out.println("Сумма его цифр = " + (units + decimals + hundreds));
-        System.out.println("Произведение = " + (units * decimals * hundreds));
+        System.out.println("единиц - " + ones);
+        System.out.println("Сумма его цифр = " + (ones + decimals + hundreds));
+        System.out.println("Произведение = " + (ones * decimals * hundreds));
 
         System.out.println("\n9. Вывод времени");
         int time = 86399;
         int ss = time % 60;
         int mm = (time / 60) % 60;
-        int hh = time / (60*60);
+        int hh = time / 3600;
         System.out.println(hh + ":" + mm + ":" + ss);
     }
 }
