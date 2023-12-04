@@ -1,6 +1,6 @@
 public class IfElseStatementTheme {
     public static void main(String[] args) {
-      System.out.println("1. Перевод псевдокода на язык Java");
+        System.out.println("1. Перевод псевдокода на язык Java");
         String sex = "male";
         if (sex == "male") {
             System.out.println("Перед вами мужчина");
@@ -89,16 +89,16 @@ public class IfElseStatementTheme {
         System.out.println("\n6. Подсчет суммы вклада и начисленных банком %");
         int deposit = 70000;
         int rate = 5;
-        int interest = (deposit * rate) / 100;
         if (deposit > 100_000 && deposit <= 300_000) {
             rate = 7;
         } else if (deposit > 300_000) {
             rate = 10;
         }
+        int interest = (deposit * rate) / 100;
         System.out.println("Сумма вклада - " + deposit);
         System.out.println("Сумма начисленного % - " + interest);
         System.out.println("Итоговая сумма с % - " + (deposit + interest));
-        
+
         System.out.println("\n7. Определение оценки по предметам");
         int historyPercent = 75;
         int historyGrade = 2;
