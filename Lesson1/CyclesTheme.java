@@ -1,90 +1,82 @@
 public class CyclesTheme {
     public static void main(String[] args) {
         System.out.println("1.Подсчет суммы четных и нечетных чисел");
-         int counter = -10;
-        int evenSum = 0;
-        int notEvenSum = 0;
+        int counter = -10;
+        int sumEven = 0;
+        int sumOdd = 0;
         do {
             if (counter % 2 == 0) {
-                evenSum = evenSum + counter;
+                sumEven = sumEven + counter;
             } else {
-                notEvenSum = notEvenSum + counter;
+                sumOdd = sumOdd + counter;
             }
             counter++;
         } while (counter <= 21);
-        System.out.println("В отрезке [-10, 21] сумма четных чисел = " + evenSum
-                + " а нечетных = " + notEvenSum);
+        System.out.println("В отрезке [-10, 21] сумма четных чисел = " + sumEven
+                + " а нечетных = " + sumOdd);
 
         System.out.println("\n2.Вывод чисел в порядке убывания");
-        int a = 10;
-        int b = 5;
-        int c = -1;
-        int maxValiue = 0;
-        if (a > b && a > c) {
-            maxValiue = a;
-        } else if (b > a && b > c) {
-            maxValiue = b;
-        } else {
-            maxValiue = c;
+        int max = 10;
+        int average = 5;
+        int min = -1;
+        if (average > max && average > min) {
+            max = average;
+        } else if (min > max && min > average) {
+            max = min;
         }
-        int minValue = 0;
-        if (a < b && a < c) {
-            minValue = a;
-        } else if (b < a && b < c) {
-            minValue = b;;
-        } else {
-            minValue = c;
+        if (max < average && max < min) {
+            min = max;
+        } else if (average < max && average < min) {
+            min = average;
+
         }
-        for (int i = maxValiue; i > minValue; i--) {
+        for (int i = max - 1; i > min; i--) {
             System.out.print(i + " ");
         }
 
         System.out.println("\n\n3.Вывод реверсивного числа и суммы его цифр");
-        int multiplier = 1;
         int startNum = 1234;
-        int num1 = 0;
-        int Sum = 0;
-        while (multiplier <= 1000) {
-            num1 = (startNum / multiplier) % 10;
-            System.out.print(num1);
-            multiplier = multiplier * 10;
-            Sum = Sum + num1;
+        int sum = 0;
+        while (startNum > 0) {
+            int digit = 0;
+            digit = startNum % 10;
+            System.out.print(digit);
+            startNum =startNum/10;
+            sum = sum + digit;
         }
-        System.out.print("\n" + Sum);
+        System.out.print("\n" + sum);
 
         System.out.println("\n\n4.Вывод чисел в несколько строк");
-        int scorer = 0;
+        int numerator = 0;
         int start = 1;
         int end = 32;
         for (int i = start; i < end; i++) {
             if (i % 2 != 0) {
                 System.out.printf("%3d", i);
-                scorer++;
-                if (scorer > 4) {
+                numerator++;
+                if (numerator > 4) {
                     System.out.println();
-                    scorer = 0;
+                    numerator = 0;
                 }
             }
         }
-        for (int i = 5 - scorer; i > 0; i--) {
-            if (scorer > 0) {
+        if (numerator > 0) {
+            for (int i = 5 - numerator; i > 0; i--) {
                 System.out.printf("%3d", 0);
-            } else {
-                break;
             }
         }
 
         System.out.println("\n\n5.Проверка количества двоек числа на четность/нечетность");
         int initialNum = 3242592;
-        int n = initialNum;
+        int copyInitialNum = initialNum;
         int totalTwo = 0;
         int residual = 0;
-        while (n != 0) {
-            residual = n % 10;
+        while (copyInitialNum != 0) {
+            residual = copyInitialNum % 10;
             if (residual == 2) {
-                totalTwo = totalTwo + 1;
+                totalTwo++;
             }
-            n = n / 10;
+            copyInitialNum = copyInitialNum / 10;
         }
         if (totalTwo % 2 == 0) {
             System.out.println("В " + initialNum + " четное количество двоек — " + totalTwo);
